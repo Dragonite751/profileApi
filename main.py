@@ -4,12 +4,10 @@ import requests
 from requests_html import HTMLSession
 from bs4 import BeautifulSoup
 import PyPDF2
-import spacy
 from fastapi import File, UploadFile
 from io import BytesIO
 
-# Load the spaCy model
-nlp = spacy.load("en_core_web_sm")
+
 
 app = FastAPI()
 
