@@ -110,7 +110,7 @@ class User:
         d['public_repos'] = r_data["public_repos"]
         dali = []
         for repo in r1_data:
-            dali.append({"name": repo["name"], "url": repo["html_url"]})
+            dali.append({"name": repo["name"], "url": repo["html_url"],"language":repo["language"],"forks":repo["forks"]})
         d['repos'] = dali
         return d
 
